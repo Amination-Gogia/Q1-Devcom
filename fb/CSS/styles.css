@@ -1,0 +1,495 @@
+html{
+    background-color: aliceblue;
+}
+
+body{
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    width: 98%;
+    background-color: white;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px blue;
+}
+
+/*https://wallpaperbat.com/img/419307-etihad-stadium-wallpaper.jpg*/
+
+.fb-img{
+   height: 140px;
+}
+
+div.header{
+    display: inline-flex;
+    height: 396px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/bg3.jpg);
+    background-position: top;
+
+}
+
+h1.heading {
+    font-size: 100px;
+    color: white;
+}
+
+.intro {
+    font-size: 14px;
+    background-image: linear-gradient(45deg, midnightblue, blue);
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 0px 8px blue;
+}
+
+.intro>h1 {
+    margin: 3px;
+}
+
+.playing {
+    display: inline-flex;
+    margin-top: 12px;
+    width: 96%;
+    background-image: linear-gradient(13deg, darkblue, dodgerblue);
+    padding: 20px;
+    color: white;
+    align-items: center;
+    box-shadow: 0px 0px 6px blue;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.playing>img {
+    width: 20%;
+    border: 1px solid lightskyblue;
+    box-shadow: 0px 0px 4px lightskyblue;
+    border-radius: 4px;
+}
+
+.playing>div {
+    padding-bottom: 30px;
+    width: 75%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.p-title{
+    text-align:center;
+}
+
+.city {
+    display: inline-flex;
+    background-image: linear-gradient(7deg, royalblue, lightskyblue);
+    width: 95.5%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 8px darkblue;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.city>img{
+    width: 20%;
+}
+
+.city>div {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    width: 73%;
+    padding-bottom: 31px;
+}
+
+.mod-day {
+    background-image: linear-gradient(45deg, gold, violet);
+    width: 95.5%;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px gold solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px violet;
+    color: white;
+}
+
+.mod-day button {
+    padding: 0px;
+    height:360px;
+}
+
+.mod-day figcaption{
+    font-size: 18px;
+}
+
+
+#mes:hover, #ron:hover{
+    border: 3px solid white ;
+    box-shadow: 0 0 8px silver;
+    border-radius: 3px;
+}
+.mod-day button>img{
+    height:100%;
+}
+
+#mes-desc, #ron-desc{
+    display: none;
+    font-size: 20px;
+    text-align: justify;
+    width: 95%;
+}
+
+.my-goat {
+    display: inline-flex;
+    width: 95.5%;
+    padding: 20px;
+    background-image: linear-gradient(29deg, blue, pink);
+    margin-top: 12px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px gold solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px violet;
+}
+
+.kdb-desc {
+    text-align: justify;
+    color: white;
+    width: 65%;
+    font-size: 20px;
+    padding-bottom: 28px;
+}
+
+#kdb {
+    box-shadow: 0 0 4px yellow;
+    width: 28%;
+    border: 1px solid gold;
+    border-radius: 3px;
+    
+}
+
+.footer {
+    width: 100%;
+    margin-top: 12px;
+    background-image: linear-gradient(9deg, midnightblue, blue);
+    text-align: center;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 8px blue;
+}
+
+.footer>a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer>a:hover{
+    text-decoration: underline;
+}
+
+.mod-day>h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.goat-title {
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+#team{
+    display: none;
+}
+@media screen and (max-width:1200px) {
+    .my-goat, .mod-day, .playing,.city{
+        width: 94%;
+    }
+    @media screen and (max-width: 900px) {
+        .footer>a, .kdb-desc, #mes-desc, #ron-desc, .city>div, .playing>div{
+            font-size: 19px;
+        }
+        .mod-day>figcaption{
+            font-size: 17px;
+        }
+        .fb-img{
+            height: 120px;
+        }
+        h1.heading{
+            font-size: 90px;
+        }
+        div.header{
+            height: 360px;
+        }
+        .intro {
+            font-size: 13px;  
+        }
+        .mod-day button {
+            height:340px;
+        }
+        @media screen and (max-width: 800px) {
+            .playing>#me{
+                display: none;
+            }
+            .playing>#team{
+                display: block;
+                width:25%;
+            }
+            .playing>div{
+                width: 70%;
+            }
+            .footer>a, .kdb-desc, #mes-desc, #ron-desc, .city>div, .playing>div{
+                font-size: 18px;
+            }
+            .mod-day>figcaption{
+                font-size: 16px;
+            }
+            .my-goat, .mod-day, .playing,.city{
+                padding: 15px;
+            }
+            .fb-img{
+                height: 100px;
+            }
+            h1.heading{
+                font-size: 80px;
+            }
+            div.header{
+                height: 340px;
+            }
+            .intro {
+                font-size: 12px;
+            }
+            .mod-day button {
+                height:320px;
+            }
+            #kdb{
+                display: none;
+            }
+            .my-goat{
+                background-image: url(https://cf-images.eu-west-1.prod.boltdns.net/v1/static/10228001001/59b14250-f30f-4c95-a2d4-f1c27bb2822d/c1d2ac42-c1bf-4975-9427-e88cb271f122/4000x2250/match/image.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 0 0 8px dodgerblue;
+                border-radius: 4px;
+                justify-content: center;
+            }
+            .my-goat>.kdb-desc{
+                width: 100%;
+                color: white;
+                background-color: rgba(0,0,0,0.4);
+                border:0px;
+            }
+            .mod-day{
+                padding-top: 0px;
+            }
+            @media screen and (max-width: 625px) {
+                h1.heading{
+                    font-size: 70px;
+                }
+                div.header{
+                    height: 320px;
+                }
+                .fb-img{
+                    height: 90px;
+                }
+                @media screen and (max-width:600px) {
+                    #md-title{
+                        font-size: 32px;
+                    }
+                    div.header{
+                        height: 310px;
+                    }
+                    .city>img{
+                        width: 24%;
+                    }
+                    .city>div{
+                        width: 70%;
+                    }
+                    .mod-day button{
+                        height: 300px;
+                    }
+                    .playing>div{
+                        width: 90%;
+                    }
+                    .playing>#team{
+                        width: 40%;
+                    }
+                    footer>a, .kdb-desc, #mes-desc, #ron-desc, .city>div, .playing>div{
+                        font-size: 17px;
+                    }
+                    footer>a{
+                        font-weight: 400;
+                    }
+                    .mod-day>figcaption{
+                        font-size: 15px;
+                    }
+                    .intro{
+                        font-size: 11px;
+                    }
+                    .my-goat, .mod-day, .playing,.city{
+                        padding: 12px; 
+                    }
+                    .mod-day, .playing, .city{
+                        padding-bottom: 20px;
+                    }
+                    .playing{
+                        flex-direction: column;
+                    }
+                    @media screen and (max-width: 575px) {
+                        div.header{
+                            height: 300px;
+                        }
+                        .fb-img{
+                            display: none;
+                        }
+                        .city{
+                            flex-direction: column-reverse;
+                        }
+                        .city>img{
+                            width: 35%;
+                        }
+                        .city>div{
+                            width: 90%;
+                        }
+                        .mod-day button{
+                            height: 270px;
+                        }
+                        @media screen and (max-width: 500px) {
+                            div.header{
+                                height: 270px;
+                            }
+                            .mod-day button{
+                                height: 240px;
+                            }
+                            .my-goat, .mod-day, .playing,.city{
+                                padding: 10px;
+                               
+                            }
+                            .mod-day, .playing, .city{
+                                padding-bottom: 16px;
+                            }
+                            @media screen and (max-width:450px) {
+                                div.header{
+                                    height: 240px;
+                                    background-image: url(https://www.shutterstock.com/shutterstock/videos/1094013975/thumb/1.jpg?ip=x480);
+                                    border: 1px solid darkblue;
+                                }
+                                .mod-day button{
+                                    height: 215px;
+                                }
+                                @media screen and (max-width: 400px) {
+                                    div.header{
+                                        height: 210px;
+                                    } 
+                                    .my-goat, .mod-day, .playing,.city{
+                                        padding: 7px;
+                                    }
+                                    footer>a, .kdb-desc, #mes-desc, #ron-desc, .city>div, .playing>div{
+                                        font-size: 16px;
+                                    }
+                                    footer>a{
+                                        font-weight: 200;
+                                    }
+                                    .mod-day>figcaption{
+                                        font-size: 14px;
+                                    }
+                                    .intro{
+                                        font-size: 10px;
+                                    }
+                                    .mod-day, .playing, .city{
+                                        padding-bottom: 14px;
+                                    }
+                                    h1.heading{
+                                        font-size: 65px;
+                                    }
+                                    .mod-day #md-title{
+                                        font-size: 26px;
+                                    }
+                                    .playing>#team{
+                                        width: 45%;
+                                    }
+                                    @media screen and (max-width:370px){
+                                        .mod-day button{
+                                            height: 190px;
+                                        }
+                                        .city>img{
+                                            width:45%;
+                                        }
+                                        h1.heading{
+                                            font-size: 60px;
+                                        }
+                                        div.header{
+                                            height: 190px;
+                                        }
+                                        .intro{
+                                            font-size: 9px;
+                                        }
+                                        .mod-day #md-title{
+                                            font-size: 24px;
+                                        }
+                                        @media screen and (max-width:340px) {
+                                            .kdb-desc{
+                                                width: 96%;
+                                            }
+                                            .playing>#team{
+                                                width: 60%;
+                                            }
+                                            footer>a, .kdb-desc, #mes-desc, #ron-desc, .city>div, .playing>div{
+                                                font-size: 15px;
+                                            }
+                                            .mod-day>figcaption{
+                                                font-size: 13px;
+                                            }
+                                            h1.heading{
+                                                font-size: 50px;
+                                            }
+                                            div.header{
+                                                height: 180px;
+                                            }
+                                            .intro{
+                                                font-size:8px;
+                                            }
+                                            .mod-day button{
+                                                height: 165px;
+                                            }
+                                            .my-goat, .mod-day, .playing,.city{
+                                                padding: 5px;
+                                            }
+                                            .mod-day, .playing, .city{
+                                                padding-bottom: 13px;
+                                            }
+                                            .mod-day #md-title{
+                                                font-size: 22px;
+                                            }
+                                            @media screen and (max-width:265px) {
+                                                .mod-day #md-title{
+                                                    font-size: 20px;
+                                                }
+                                                h1.heading{
+                                                    font-size: 45px;
+                                                }
+                                                .intro{
+                                                    font-size:7px;
+                                                }
+                                                div.header{
+                                                    height: 170px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

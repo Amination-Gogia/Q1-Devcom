@@ -1,0 +1,356 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    background-color: aliceblue;
+}
+
+body{
+    max-width: 1400px;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 12px blue;
+}
+
+.header{
+    color: white;
+    background-image: url(https://ak0.picdn.net/shutterstock/videos/3193780/thumb/1.jpg?ip=x480);
+    background-position: left;
+    padding: 0px;
+    width: 100%;
+    box-shadow: 0 0 8px blue;
+}
+
+.page-title{
+    padding: 50px;
+    font-size: 100px;
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.love{
+    margin: 12px;
+    width: auto;
+    background-image: linear-gradient(6deg, blue, magenta);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px blue;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc img {
+    width: 30%;
+}
+
+.desc p, .conc-text, .fr-content{
+    text-align: justify;
+}
+
+.freshiezza{
+    margin: 12px;
+    margin-top: 0px;
+    width: auto;
+    background-image: linear-gradient(6deg, blue, magenta);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px blue;
+}
+
+.fr-title, .love-title, .conc-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.conclude{
+    margin: 12px;
+    margin-top: 0px;
+    width: auto;
+    background-image: linear-gradient(6deg, blue, magenta);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px blue;
+}
+
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(7deg, blue, royalblue);
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 0 0 8px blue;
+}
+
+.footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.freshiezza video{
+    width: 30%;
+    margin-left: 35%;
+}
+
+#list-tab{
+    padding-bottom: 10px;
+    padding-top: 10px; 
+}
+.d-forms{
+    padding: 12px;
+    margin: 12px;
+    margin-top: 0px;
+    background-image: linear-gradient(9deg, skyblue, dodgerblue);
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 8px blue;
+}
+
+.d-forms #nav-tabContent{
+    font-size: 17px;
+}
+
+.carousel-item>img{
+    width: 26%;
+    margin-left: 37%;
+}
+ 
+#break, #bhangra, #bolly{
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    text-align: justify;
+}
+
+#break>img, #bolly>img, #bhangra>img{
+    width: 40%;
+    margin-left: 30%;
+}
+.d-f-title{
+    font-size: 25px;
+}
+@media screen and (max-width: 850px){
+    .fr-title, .love-title, .conc-title{
+        font-size: 28px;
+    }
+    .d-f-title{
+        font-size: 24px;
+    }
+    .footer, .conclude, .love, .fr-content{
+        font-size: 19px;
+    }
+
+    .freshiezza video{
+        width: 38%;
+        margin-left: 31%;
+    }
+
+    .carousel-item>img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .desc img {
+        width: 38%;
+    }
+    @media screen and (max-width: 700px){
+        #break>img, #bolly>img, #bhangra>img{
+            width: 60%;
+            margin-left: 20%;
+            padding-bottom: 10px;
+        }
+        .fr-title, .love-title, .conc-title{
+            font-size: 25px;
+        }
+        .freshiezza video{
+            width: 42%;
+            margin-left: 29%;
+        }
+        .footer, .conclude, .love, .fr-content{
+            font-size: 18px;
+        }
+        .d-f-title{
+            font-size: 23px;
+        }
+        .desc img {
+            width: 42%;
+        }
+        .carousel-item>img{
+            width: 40%;
+            margin-left: 30%;
+        }
+        
+        @media screen and (max-width:600px) {
+            .desc{
+                flex-direction: column-reverse;
+            }
+            .desc p{
+                margin-bottom:4px ;
+            }
+            #break>img, #bolly>img, #bhangra>img{
+                width: 60%;
+                margin-left: 20%;
+                padding-bottom: 10px;
+            }
+            .freshiezza video{
+                width: 46%;
+                margin-left: 27%;
+            }
+            .footer, .conclude, .love, .fr-content{
+                font-size: 17px;
+            }
+            .d-f-title{
+                font-size: 22px;
+                margin-bottom: 0px;
+            }
+
+            .desc img {
+                width: 44%;
+                margin-bottom: 10px;
+            }
+            
+            .carousel-item>img{
+                width: 42%;
+                margin-left: 29%;
+            }
+            @media screen and (max-width: 500px) {
+                .page-title{
+                    font-size: 90px;
+                }
+
+                #break>img, #bolly>img, #bhangra>img{
+                    width: 60%;
+                    margin-left: 20%;
+                    padding-bottom: 10px;
+                }
+                .freshiezza video{
+                    width: 60%;
+                    margin-left: 20%;
+                }
+                .footer, .conclude, .love, .fr-content{
+                    font-size: 16px;
+                }
+                .d-f-title{
+                    font-size: 21px;
+                }
+                .desc img {
+                    width: 50%;
+                }
+        
+                .carousel-item>img{
+                    width: 50%;
+                    margin-left: 25%;
+                }
+                div#bolly, div#bhangra, div#break{
+                    font-size: 16px;
+                }
+                h5.tab-name
+                {
+                    font-size: 18px;
+                    padding: 2px;
+                }
+                @media screen and (max-width: 400px) {
+                    .page-title{
+                        background-color: rgba(0,0,0,0);
+                    }
+                    
+                    div#bolly, div#bhangra, div#break{
+                        font-size: 15px;
+                    }
+                    h5.tab-name
+                    {
+                        font-size: 17px;
+                        padding: 1px;
+                    }
+                    .desc{
+                        flex-direction: column;
+                    }
+                    .desc img{
+                        margin-top: 10px;
+                    }
+                    .page-title{
+                        font-size: 80px;
+                        padding: 30px;
+                    }
+                    #break>img, #bolly>img, #bhangra>img{
+                        width: 80%;
+                        margin-left: 10%;
+                        padding-bottom: 10px;
+                    }
+                    .freshiezza video{
+                        width: 80%;
+                        margin-left: 10%;
+                    }
+                    .footer, .conclude, .love, .fr-content{
+                        font-size: 15px;
+                    }
+                    .d-f-title{
+                        font-size: 20px;
+                    }
+                    .desc img {
+                        width: 80%;
+                    }
+            
+                    .carousel-item>img{
+                        width: 70%;
+                        margin-left: 15%;
+                    }
+                    @media screen and (max-width: 350px) {
+                        .page-title{
+                            font-size: 70px;
+                            padding: 18px;
+                        }
+                        div#bolly, div#bhangra, div#break{
+                            font-size: 14px;
+                        }
+                        h5.tab-name
+                        {
+                            font-size: 16px;
+                            padding: 1px;
+                        }
+                        .d-f-title{
+                            font-size: 19px;
+                        }
+                        @media screen and (max-width: 300px) {
+                            .page-title{
+                                font-size: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+}

@@ -1,0 +1,286 @@
+html{
+    background-color: aliceblue;
+}
+
+body{
+    width: 97%;
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 0 0 8px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(6deg, darkblue, blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    box-shadow: 0 0 8px blue;
+}
+
+.page-title {
+    color: white;
+    font-size: 100px;
+}
+
+.header>img{
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.intro {
+    width: 98.2%;
+    color: white;
+    background-image: linear-gradient(9deg, dodgerblue, skyblue);
+    padding: 29px;
+    font-size: 20px;
+    margin-top: 12px;
+    box-shadow: 0 0 8px blue;
+}
+
+.interest-intro {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.interests {
+    margin: 0px;
+    width: 98.2%;
+    display: inline-flex;
+    margin-top: 24px;
+    padding: 0px 29px;
+}
+
+
+.mys-content {
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+}
+
+.murder-mys {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285_640.jpg);
+    color: white;
+    font-size: 20px;
+    background-size: cover;
+    width: 98.2%;
+    background-position: right;
+    box-shadow: 0 0 8px black;
+}
+
+h1.mys-title {
+    text-align: center;
+}
+
+.footer {
+    background-image: linear-gradient(6deg, darkblue, blue);
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    box-shadow: 0 0 8px blue;
+}
+
+.footer a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.footer ul {
+    padding: 0px;
+    padding-top: 35px;
+    list-style-type: none;
+    padding-bottom: 25px;
+}
+
+.footer ul li{
+    text-align:center;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.carousel-item>img{
+    width: 20%;
+    margin-left: 40%;
+}
+
+@media screen and (max-width: 960px) {
+    .header{
+        flex-direction: column;
+        padding-bottom:30px;
+    }   
+
+    .header>img{
+        width: 80%;
+        padding-bottom: 0px;
+        margin-top: -17%;
+    }
+
+    .page-title {
+        color: white;
+        font-size: 80px;
+    }
+    @media screen and (max-width: 900px){
+        .mys-content, .intro{
+            padding:30px;
+
+        }
+        .interest-intro{
+            font-size: 21px;
+        }
+        .footer a{
+            font-size: 22px;
+        }
+        .mys-content, .intro, footer a{
+            font-size: 19px;
+        }
+        .col-md-4{
+            padding: 0px 6px
+        }
+        @media screen and (max-width: 750px) {
+            .mys-content, .intro{
+                padding: 25px;    
+            }
+            .murder-mys, .intro{
+                width: 97%;
+            }
+            .interests{
+                margin-top: 20px;
+            }
+            .interest-intro, .footer a{
+                font-size: 20px;
+            }
+            .mys-content, .intro{
+                font-size: 18px;
+            }
+            .carousel-item>img{
+                width: 26%;
+                margin-left: 37%;
+            }
+        
+            @media screen and (max-width: 600px) {
+                .murder-mys{
+                    background-position: center;
+                }
+                
+                .mys-content, .intro{
+                    padding: 21px;    
+                }
+                .murder-mys, .intro{
+                    width: 96.5%;
+                }
+                .interest-intro, .footer a{
+                    font-size: 19px;
+                }
+                .mys-content, .intro{
+                    font-size: 17px;
+                }
+                .page-title{
+                    font-size: 70px;
+                }
+
+                .carousel-item>img{
+                    width: 32%;
+                    margin-left: 34%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    .mys-content, .intro{
+                        padding: 20px;    
+                    }
+                    .murder-mys, .intro{
+                        width: 96%;
+                    }
+                    .interest-intro, .footer a{
+                        font-size: 18px;
+                    }
+                    .mys-content, .intro{
+                        font-size: 16px;
+                    }
+                    .carousel-item>img{
+                        width: 38%;
+                        margin-left: 31%;
+                    }
+                    .page-title{
+                        font-size: 60px;
+                    }
+                    .col-md-4{
+                        padding: 0px 4px
+                    }
+                    @media screen and (max-width: 400px) {
+                        .mys-content, .intro{
+                            padding: 17px;    
+                        }
+                        .murder-mys, .intro{
+                            width: 95.5%;
+                        }
+                        .interest-intro, .footer a{
+                            font-size: 17px;
+                        }
+                        .mys-content, .intro, .card-text{
+                            font-size: 15px;
+                        }
+                        .carousel-item>img{
+                            width: 40%;
+                            margin-left: 30%;
+                        }
+                        .header>img{
+                            width: 90%;
+                        }
+                        .page-title{
+                            font-size: 55px;
+                        }
+                        .header{
+                            padding:20px;
+                        }   
+
+                        .card-col{
+                            padding: 0px 6px;
+                        }
+
+                    
+                        @media screen and (max-width: 300px){
+                            .mys-content, .intro{
+                                padding: 17px;    
+                            }
+                            .murder-mys, .intro{
+                                width: 95%;
+                            }
+                            .interest-intro, .footer a{
+                                font-size: 16px;
+                            }
+                            .mys-content, .intro, .card-text{
+                                font-size: 14px;
+                            }
+                            .carousel-item>img{
+                                width: 44%;
+                                margin-left: 28%;
+                            }
+                            .header>img{
+                                width: 90%;
+                            }
+                            .page-title{
+                                font-size: 50px;
+                            }
+                            .header{
+                                padding:15px;
+                            }
+                            .card-col{
+                                padding: 0px 4px;
+                            }
+                        }
+                    
+                    
+                    }
+                }
+            }
+        }
+    
+    }
+}
